@@ -1,4 +1,4 @@
-# 🚀 Concept du Two-Tower LCM (Large Concept Model) 🧠
+# 🚀Proof of Concept du Two-Tower LCM (Large Concept Model) 🧠
 
 Le **Two-Tower LCM** est un modèle de génération de texte qui opère dans un **espace sémantique de haut niveau**, plutôt que de travailler directement au niveau des mots ou des tokens (comme le font les modèles de langage traditionnels). L'idée principale est de modéliser des **concepts** abstraits, qui peuvent représenter des phrases ou des idées complètes, indépendamment de la langue ou de la modalité (texte, parole, etc.).
 
@@ -23,6 +23,9 @@ Le **Two-Tower LCM** est un modèle de génération de texte qui opère dans un 
 ### 4. **Généralisation zéro-shot** 🎯
 - Grâce à l'utilisation d'un espace sémantique indépendant de la langue, le modèle peut être appliqué à des langues ou des modalités qu'il n'a jamais vues pendant l'entraînement, sans nécessiter de données supplémentaires.
 
+
+References:
+[ai.meta.com](https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space/)
 ---
 
 
