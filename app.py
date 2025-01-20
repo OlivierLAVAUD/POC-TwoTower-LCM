@@ -2,6 +2,11 @@ import torch
 import torch.nn as nn
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
+import warnings  # Import pour gérer les avertissements
+
+# Désactiver les avertissements spécifiques (optionnel)
+warnings.filterwarnings("ignore", category=FutureWarning)  # Ignorer les FutureWarning
+warnings.filterwarnings("ignore", category=UserWarning)    # Ignorer les UserWarning
 
 # Charger le tokenizer et le modèle alternatif
 SONAR_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"  # Modèle alternatif
@@ -138,9 +143,9 @@ for epoch in range(20):  # Augmenter le nombre d'époques
 torch.save(model.state_dict(), "two_tower_lcm.pth")
 print("Modèle sauvegardé avec succès.")
 
-# Charger le modèle sauvegardé
+# Charger le modèle sauvegardé avec weights_only=True pour éviter les avertissements
 model = TwoTowerLCM(embedding_dim, hidden_dim, num_layers)
-model.load_state_dict(torch.load("two_tower_lcm.pth"))
+model.load_state_dict(torch.load("two_tower_lcm.pth", weights_only=True))  # Ajout de weights_only=True
 model.eval()  # Passer en mode évaluation
 print("Modèle chargé avec succès.")
 

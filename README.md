@@ -33,8 +33,8 @@ Le **Two-Tower LCM** est un modèle de génération de texte qui opère dans un 
 1. **Clonez le dépôt et installez les dépendances :**
 
    ```bash
-   git clone https://github.com/votre-utilisateur/LCM-TwoTowers.git
-   cd LCM-TwoTowers
+   git clone https://github.com/OlivierLAVAUD/POC-TwoTower-LCM.git
+   cd POC-TwoTower-LCM
    pip install uv
    uv venv
    .venv\Scripts\activate
