@@ -1,0 +1,12 @@
+[project]
+name = "POC-TwoTower-LCM"
+version = "0.1.0"
+description = "Proof of Concept du TwoTower LCM (Large Concept Model)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.2",
+    "scikit-learn>=1.6.1",
+    "torch>=2.5.1",
+    "transformers>=4.48.0",
+]
